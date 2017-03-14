@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace NiceTry.LojaVirtual.Dominio.Repositorio
 {
-    class ProdutoRepositorio
+    public class ProdutoRepositorio
     {
         private readonly EfDbContext _context = new EfDbContext();
 
-        public IEnumerable<Produto> Produtos
+         public IEnumerable<Produto> Produtos
         {
             get { return _context.Produtos; }
-        }
+        }        
+       
     }
 }
